@@ -1,0 +1,98 @@
+body
+{
+	width: 90%;
+	margin: 5% auto;
+	font-family: "Belgrano";
+	background-color: #fbf0ff;
+
+}
+
+section
+{
+	width: 29%;
+	margin-left: 35%; 
+	background-color: rgba(0,0,0,0.8);
+	box-shadow: 8px 8px 5px 10px gray;
+	color: white;
+
+}
+
+section .container
+{
+
+	padding: 10%;
+	display: inline-block;
+	text-align: -webkit-center;
+	
+}
+
+
+section .container .login-image img
+{
+	height: 35%;
+	width: 35%;
+	border-radius: 50%;
+}
+
+section .container .head
+{
+	font-size: 190%;
+	font-weight: bold;
+}
+
+section .container form
+{
+	padding: 5%;
+	margin: 2% 0%;
+}
+
+section .container form label,input[type="text"], input[type="password"]
+{
+	margin: 3% 0%;
+	padding: 2%;
+	width: 90%;
+	font-family: "Belgrano";
+	font-size: 100%;
+}
+
+section .container form input[type="submit"]
+{
+	width: 50%;
+	padding: 3%;
+	font-size: 100%;
+	border: none;
+	background-image: linear-gradient(to right, #a2ffa7, #a38ef0);
+
+}
+
+section .container form input[type="submit"]:hover
+{
+	cursor: pointer;
+	background-image: linear-gradient(to right, #9943ee,#bbf08e, #9943ee);
+
+}
+
+section .container form #msg
+{
+	color: red;
+}
+
+
+@media all and (max-width: 630px)
+{
+	body
+	{
+		margin:10% 1%;
+	}
+
+	section 
+	{
+		width: 80%;
+		margin: 15%;
+	}
+
+	section .container
+	{
+		padding: 0% 15%;
+	}
+}

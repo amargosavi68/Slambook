@@ -1,0 +1,401 @@
+/*This stylesheet is only for the home page.*/
+
+
+body
+{
+	margin: 0% auto;
+	margin-top: 0%;
+	margin-bottom: 0%;
+	background: #fff2ff;
+}
+
+header
+{
+	width: 100%;
+	background-color: #000;
+	text-align: justify;
+	color: #fff;
+	z-index: 1;
+}
+
+header .head
+{
+	display: inline-flex;
+	width: 30%;
+}
+header .head .logo
+{
+	padding-left: 20%;
+	height: 50px;
+	width: 80px;
+}
+
+header .head h1
+{
+	text-transform: uppercase;
+	font-size: 260%;
+	padding-left: 10%;
+	text-shadow: 3px 0px 3px #89f790;
+}
+
+
+header .head a
+{
+	margin-left: 8%;
+	text-decoration: none;
+	height: 10%;
+	padding: 2%;
+	width: 25%;
+	color: black;
+	text-align: center;
+	font-size: 16px;
+	border: none;
+	background-image: linear-gradient(to right, #ff12f3, #99f3ff);
+	border-radius: 5px;
+
+}
+
+header .head a:hover
+{
+	cursor: pointer;
+	border: 1px solid blue;
+	box-shadow: 2px 0px 3px lightblue;
+	background: white;
+	color: blue;
+}
+
+section
+{
+	width: 95%;
+	margin:auto;
+	background-image: linear-gradient(to right,#ff12f3, #fff, #99f3ff);
+}
+
+section .first-para
+{
+	display: inline-flex;
+	margin: 3% 5%;
+
+}
+
+section .first-para span .text
+{
+	font-size: 160%;
+	font-family: cursive;
+	font-weight: bold;
+	margin: 10%;
+	padding: 2%;
+}
+
+section .first-para:hover
+{
+	box-shadow: 3px 3px 3px 5px #ecb3ff, -3px -3px 3px 5px #ecb3ff ;
+	transition: 0.2s;
+}
+section .first-para span
+{
+	width: 45%;
+	border: none;
+}
+
+section .first-para span label
+{
+	font-family: 'Charmonman';
+	font-size: 130%;
+	font-weight: bold;
+	font-style: italic;
+	display: block;
+	text-align: justify;
+	width: 60%;
+	margin: 10%;
+	padding: 8%;
+	line-height: 1.5em;
+	box-shadow: inset 5px 5px 10px 2px lightblue ,inset -5px -5px 10px 2px lightblue;
+}
+section .first-para span img
+{
+	height: 200px;
+	width: 200px;
+	margin: 10%;
+	margin-left: 20%;
+	transform: rotate(20deg);
+	padding: 7%;
+	background: transparent;
+	box-shadow: 5px 5px 10px 2px lightblue,
+				inset 5px 5px 10px 2px gray ,
+				inset -5px -5px 10px 2px gray;
+
+	/*animation-name: example;
+	animation-duration: 8s;
+	animation-iteration-count: infinite;*/
+}
+/*
+@keyframes example 
+{
+	0% {
+		transform: rotate(20deg);
+		transform: translate(10%);
+	}
+	50%{
+		transform: rotate(20deg);
+		transform: translate(90%);
+	}
+	100%{
+		transform: rotate(20deg);
+		transform: translate(10%);
+	}
+}
+*/
+section hr
+{
+
+	color: red;
+	border: 2px solid red;
+	box-shadow: 3px 3px 5px 3px lightgreen;
+	width: 90%;
+}
+
+section .second-para-head
+{
+	text-align: center;
+	font-family: "helvetica",sans-serif;
+	font-size: 280%;
+	font-weight: bolder;
+}
+
+section .second-para
+{
+	display: inline-flex;
+	margin: 5% 10%;
+}
+section .second-para:hover
+{
+	box-shadow: 3px 3px 3px 5px #ecb3ff, -3px -3px 3px 5px #ecb3ff ;
+	transition: 0.2s;
+}
+
+section .second-para span
+{
+	width: 45%;
+	border: none;
+}
+
+section .second-para span label
+{
+	font-family: 'Belgrano';
+	font-size: 130%;
+	display: block;
+	text-align: justify;
+	width: 70%;
+	margin: 10%;
+	padding: 10%;
+	line-height: 1.5em;
+	box-shadow: inset 5px 5px 10px 2px lightblue ,inset -5px -5px 10px 2px lightblue;
+}
+section .second-para span img
+{
+	height: 60%;
+	width: 60%;
+	margin: 5%;
+	transform: rotate(-20deg);
+	padding: 7%;
+	background: transparent;
+	box-shadow: 5px 5px 10px 2px lightblue,
+				inset 5px 5px 10px 2px gray ,
+				inset -5px -5px 10px 2px gray;
+
+
+}
+
+section .d_head
+{
+	text-align: center;
+	margin: 1%;
+	font-size: 250%;
+	font-family: 'Cherry Swash';
+	font-weight: bold;
+
+}
+
+section .developers
+{
+	display: inherit;
+	margin: 3% 30%;
+	border:2px solid pink;
+	box-shadow: 3px 3px 3px 4px gray;
+	border:2px solid pink;
+
+}
+
+section .developers .developers-para
+{
+	padding: 3%;
+	margin-left: 3%;
+	
+}
+
+section .developers  span p
+{
+	margin: 2%;
+	padding: 5%;
+	text-align: justify;
+	font-family: "Charm";
+	font-size: 1.3em;
+	color: #010101;
+}
+
+section .developers .developers-para span img
+{
+	height: 30%;
+	width: 30%;
+	box-shadow: 2px 2px 3px 0px gray, -2px -2px 3px 0px gray;
+	border: 4px solid #abbff1;
+	border-radius: 50%;
+	margin-left: 25%;
+	padding: 4%;
+}
+
+section .developers:hover
+{
+	transform: scale(1.05);
+	box-shadow: 5px 5px 10px 5px white,-5px -5px 10px 5px white,5px -5px 10px 5px white,-5px 5px 10px 5px white;
+	transition: 0.5s;
+}
+
+
+footer
+{
+	background-color: #000;
+	width: 100%;
+	margin-bottom: -5%;
+	color: #00fd01;
+	text-align: center;
+}
+
+footer p
+{
+	font-size: 0.8rem;
+	padding: 1%;
+}
+
+@media screen and (max-width: 850px)
+{
+	body
+	{
+		width: 100%;
+		margin: 0% auto;
+	}
+
+	header
+	{
+		width: 100%;
+		height: auto;
+		display: flow-root;
+		background: #f6b7e7;
+		color: black;
+		text-align: -webkit-center;
+		box-shadow:0px 4px 5px gray;
+
+	}
+	header .head
+	{
+		display:grid;
+		width: inherit;
+	}
+
+	header .head h1
+	{
+		margin: 1%;
+		padding: 0%;
+		color: black;
+		box-shadow: none;
+	}
+
+	header .head a
+	{
+		margin: 0.5% 35%;
+		height: auto;
+    	padding: 1%;
+    	width: -webkit-fill-available;
+	}
+	header .head .logo
+	{
+		display: none;
+	}
+
+	section
+	{
+		margin:3%;
+		text-align: center;
+		background-image: linear-gradient(to left,#ac76d8, #dad3e3,#6be750)
+	}
+
+	section .first-para
+	{
+		display: contents;
+	}
+
+	section .first-para .text
+	{
+		margin-top: 5%;
+	}
+
+	section .first-para span img
+	{
+		display: none;
+	}
+
+	section .first-para span label
+	{
+		margin: 3%;
+	}
+
+	section .second-para
+	{
+		display: contents;
+
+	}
+	section .second-para span img
+	{
+		height: 50%;
+		width: 50%;
+		margin: 5%;
+		transform: rotate(0deg);
+		padding: 7%;
+		background: transparent;
+		box-shadow: 5px 5px 10px 2px lightblue,
+					inset 5px 5px 10px 2px gray ,
+					inset -5px -5px 10px 2px gray;
+
+	
+	}
+
+	section .second-para span label
+	{
+		margin: 1%;
+	}
+
+	section .developers
+	{
+		display: contents;
+	}
+
+	section .developers .developers-para
+	{
+		margin: 1% 30%;
+	}
+
+	section .developers span p
+	{
+		margin: -1% 20%;
+		border-bottom:3px solid #ff0293;
+	}
+
+	section .developers .developers-para span img
+	{
+		height: 40%;
+		width: 40%;
+		margin-left: 3%;
+	}
+}
+

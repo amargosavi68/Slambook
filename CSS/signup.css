@@ -1,0 +1,100 @@
+body
+{
+	margin: 5% auto;
+	width: 90%;
+	background-image: linear-gradient(to right, #f2f2f2, #f3f3f3 );
+	font-family: sans-serif;
+}
+
+div
+{
+	text-align: center;
+	
+}
+
+.container
+{
+	margin:7% 25%; 
+	box-shadow: 2px 2px 5px 5px gray;
+}
+
+.container .head
+{
+	font-size: 250%;
+	font-weight: bold;
+	padding: 5%;
+}
+
+.signup-form
+{
+	margin: 3%;
+	padding: 1%;
+}
+
+.signup-form label
+{
+	font-weight: bold;
+}
+
+.signup-form label, input, span
+{
+	position: static;
+	margin: 2%;
+	font-size: 120%;
+	width: 70%;
+}
+
+.signup-form input[type="text"], input[type="email"], input[type="password"]
+{
+	padding: 1%;
+	border: 1px solid gray;
+	border-radius: 3px;
+	box-shadow: 0px 0px 1px 2px lightblue;
+}
+
+
+.signup-form input[type="submit"]
+{
+	background-color: #10fd10;
+	padding: 1vw;
+	border: none;
+	border-radius: 5px;
+	transition: .2s;
+}
+
+.signup-form input[type="submit"]:hover
+{
+	cursor: pointer;
+	background-color: rgba(70,135,193,0.3);
+}
+
+@media all and (max-width: 520px)
+{
+	.container .head
+	{
+		font-size: 170%;
+	}
+	
+	.container .signup-form
+	{
+		font-size: 80%;
+	}
+}
+
+@media all and (max-width: 920px )
+{
+	body
+	{
+		margin: 10% auto;
+		width: 100%;
+	}
+
+	.container
+	{
+		margin:3% 8%;
+		width: 80%; 
+	}
+
+
+}
+
