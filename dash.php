@@ -23,7 +23,7 @@
 					array_push($user_info, $x[1]);
 					array_push($user_info, $x[2]);
 					array_push($user_info, $x[3]);
-					array_push($user_info, AES_DECRYPT(($x[4]),'slambookpwd'));
+					array_push($user_info, AES_DECRYPT($x[4],'slambookpwd'));
 
 				}
 
@@ -124,7 +124,7 @@
 	<header>
 			<label>Welcome,</label><label id="user"></label>
 		<div class="logout">
-			<a href="login.php"><img src="Images\lg.png" height="30px" width="30px" alt="Logout Button"></a>
+			<a href="login.php"><img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.iconscout.com%2Ficon%2Fpremium%2Fpng-256-thumb%2Flogout-1-110657.png&f=1&nofb=1" height="30px" width="30px" alt="Logout Button"></a>
 		</div>
 	</header>
 
