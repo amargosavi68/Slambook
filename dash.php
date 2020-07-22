@@ -23,7 +23,7 @@
 					array_push($user_info, $x[1]);
 					array_push($user_info, $x[2]);
 					array_push($user_info, $x[3]);
-					array_push($user_info, AES_DECRYPT($x[4],'slambookpwd'));
+					array_push($user_info, $x[4]);
 
 				}
 
