@@ -17,7 +17,7 @@
 				<img src="images\avatar.png" name="Login image"><br>
 			</span>
 
-			<span class="head">Login Here</span>
+			<span class="head">Please Login Here</span>
 
 			<span id="msg"></span>
 
