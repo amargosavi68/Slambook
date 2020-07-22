@@ -3,7 +3,8 @@
 	if (isset($_GET['data1'])) 
 	{
 	
- 		$connection = mysqli_connect("localhost", "root", "", "amar","3307") or die ("Unable to connect");
+ 		$connection = mysqli_connect("btsaydncrw6xehglqk6u-mysql.services.clever-cloud.com", "uqpatj9ytkbkfa7e", "x11j8zt3kiS1UaX70zrS", "btsaydncrw6xehglqk6u","3306") or die("Unable to connect");
+
 		$query = "SELECT sender_id FROM invitation WHERE status=1 and user_id=".$_GET['data1'];
 		$result = mysqli_query($connection, $query);
 
@@ -22,7 +23,7 @@
 					array_push($user_info, $x[1]);
 					array_push($user_info, $x[2]);
 					array_push($user_info, $x[3]);
-					array_push($user_info, md5($x[4]));
+					array_push($user_info, AES_DECRYPT(($x[4]),'slambookpwd'));
 
 				}
 
@@ -58,7 +59,8 @@
 	if (isset($_GET['data1'])) //for Notification panel
 	{
 	
- 		$connection = mysqli_connect("localhost", "root", "", "amar","3307") or die ("Unable to connect");
+ 		$connection = mysqli_connect("btsaydncrw6xehglqk6u-mysql.services.clever-cloud.com", "uqpatj9ytkbkfa7e", "x11j8zt3kiS1UaX70zrS", "btsaydncrw6xehglqk6u","3306") or die("Unable to connect");
+ 		
 		$query = "SELECT user_id FROM invitation WHERE status=0 and sender_id=".$_GET['data1'];
 		$result = mysqli_query($connection, $query);
 		if($result)

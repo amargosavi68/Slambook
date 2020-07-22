@@ -95,16 +95,20 @@
 </html>
 
 
+
+<!-- Backend starts from here -->
+
 <?php 
 
-	$conn = mysqli_connect("localhost","root","","amar","3307") or die("Unable to connect");
+	$conn = mysqli_connect("btsaydncrw6xehglqk6u-mysql.services.clever-cloud.com", "uqpatj9ytkbkfa7e", "x11j8zt3kiS1UaX70zrS", "btsaydncrw6xehglqk6u","3306") or die("Unable to connect");
+
 	if (isset($_POST['first_name']) && isset($_POST['last_name']) && isset($_POST['email']) && isset($_POST['password'])) 
 	{
 		$result = mysqli_query($conn, "SELECT * FROM login WHERE email= '".$_POST['email']."'");
 		$data = mysqli_fetch_array($result);
 		if(!isset($data))
 		{
-			$enc_pass = md5($_POST['password']);
+			$enc_pass = AES_ENCRYPT($_POST['password'],'slambookpwd');
 			$query = "INSERT INTO login(first_name,last_name,email,password)VALUES('".$_POST['first_name']."','".$_POST['last_name']."','".$_POST['email']."','$enc_pass')";
 			mysqli_query($conn, $query);
 			echo '<script>alert("Registered successfully")</script>';

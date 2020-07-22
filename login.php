@@ -41,7 +41,7 @@
 
 
 <?php
-	$conn = mysqli_connect("localhost", "root", "", "amar","3307") or die("Unable to connect");
+	$conn = mysqli_connect("btsaydncrw6xehglqk6u-mysql.services.clever-cloud.com", "uqpatj9ytkbkfa7e", "x11j8zt3kiS1UaX70zrS", "btsaydncrw6xehglqk6u","3306") or die("Unable to connect");
 	session_start();
 	
 	if(isset($_POST['username']) && isset($_POST['password'])) 
@@ -53,7 +53,8 @@
 	
 		if(isset($data)) {
 			
-			if(md5($_POST['password']) == $data[4]) {
+			$dec_password = AES_DECRYPT($_POST['password'],'slambookpwd');
+			if($dec_password == $data[4]) {
 				
 				header("Location: dash.php?data1=".$data[0]."&data2=".$data[1]." ".$data[2]);
 			}

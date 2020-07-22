@@ -20,7 +20,7 @@
 		$date = $_POST['date'];
 
 		// Create connection
-		$conn = new mysqli("localhost","root","","amar","3307") or die("Error in connection");
+		$conn = mysqli_connect("btsaydncrw6xehglqk6u-mysql.services.clever-cloud.com", "uqpatj9ytkbkfa7e", "x11j8zt3kiS1UaX70zrS", "btsaydncrw6xehglqk6u","3306") or die("Unable to connect");
 			
 			$query ="INSERT INTO slam_info VALUES('$friends_id','$u_id','$moments','$past','$marooned','$holiday','$dreamcity','$craziest','$life','$bestthing','$fantasy','$bestfriends','$thoughts','$date')"; 
 
@@ -38,7 +38,7 @@
 			 	echo "<h2 align='center' style='color:#7080c3; font-family:sans-serif;margin-top:100px;'>Data not inserted. Please try again..<br>Please go to previous page and fill it again.</h2>";
 			 }
 		
-		$conn -> close();
+		mysqli_close($conn);
 		
 	}
 
@@ -51,7 +51,7 @@
 		$uid = $_GET['userid'];     // store user_id 
 		$fid = $_GET['friend_id'];	// store friend's id 
 
-		$conn = mysqli_connect("localhost","root","","amar","3307") or die("Unable to connect");
+		$conn = mysqli_connect("btsaydncrw6xehglqk6u-mysql.services.clever-cloud.com", "uqpatj9ytkbkfa7e", "x11j8zt3kiS1UaX70zrS", "btsaydncrw6xehglqk6u","3306") or die("Unable to connect");
 
 		$query = "SELECT * FROM slam_info WHERE user_id='$fid' and sender_user_id='$uid'";
 		$result = mysqli_query($conn, $query);

@@ -3,7 +3,9 @@
 	if (isset($_GET['userid']) && isset($_GET['fname']))  //Request coming from dashboard to insert values in invitation 
 	{
 		//echo "<script>alert('".$_GET['userid']." ".$_GET['fname']."')</script>";
-		$connection = mysqli_connect("localhost", "root", "", "amar","3307") or die ("Unable to connect");
+		$connection = mysqli_connect("btsaydncrw6xehglqk6u-mysql.services.clever-cloud.com", "uqpatj9ytkbkfa7e", "x11j8zt3kiS1UaX70zrS", "btsaydncrw6xehglqk6u","3306") or die("Unable to connect");
+
+
 		$query = "SELECT user_id FROM login WHERE email='".$_GET['fname']."'";
 		$result = mysqli_fetch_array(mysqli_query($connection, $query));
 		if ($result) 
@@ -38,7 +40,9 @@
 	if (isset($_GET['query']))  //Request coming from dashboard to insert values in invitation 
 	{
 		//echo "<script>alert('".$_GET['userid']." ".$_GET['fname']."')</script>";
-		$connection = mysqli_connect("localhost", "root", "", "amar","3307") or die ("Unable to connect");
+		$connection = mysqli_connect("btsaydncrw6xehglqk6u-mysql.services.clever-cloud.com", "uqpatj9ytkbkfa7e", "x11j8zt3kiS1UaX70zrS", "btsaydncrw6xehglqk6u","3306") or die("Unable to connect");
+
+		
 		$query = $_GET['query'];
 		$result = mysqli_query($connection, $query);
 		
