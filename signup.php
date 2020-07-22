@@ -113,7 +113,7 @@
 			mysqli_query($conn, $query);
 			echo '<script>alert("Registered successfully")</script>';
 			mysqli_close($conn);
-			header("Location:index.html");
+			header("Location:index.php");
 		}
 		else
 		{
