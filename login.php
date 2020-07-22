@@ -53,7 +53,7 @@
 	
 		if(isset($data)) {
 			
-			$dec_password = AES_DECRYPT($_POST['password'],'slambookpwd');
+			$dec_password = $_POST['password'];
 			if($dec_password == $data[4]) {
 				
 				header("Location: dash.php?data1=".$data[0]."&data2=".$data[1]." ".$data[2]);
