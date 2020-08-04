@@ -1,11 +1,3 @@
-<?php
-	
-	if ($_GET('data')=='lg') {
-		session_destroy();
-		# code...
-	}
-?>
-
 
 <!DOCTYPE html>
 <html>
