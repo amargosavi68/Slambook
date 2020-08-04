@@ -124,7 +124,7 @@
 	<header>
 			<label>Welcome,</label><label id="user"></label>
 		<div class="logout">
-			<a href="login.php"><img src="Images\lg.png" height="30px" width="30px" alt="Logout Button"></a>
+			<a href="login.php\data='lg'"><img src="Images\lg.png" height="30px" width="30px" alt="Logout Button"></a>
 		</div>
 	</header>
 

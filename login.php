@@ -1,3 +1,10 @@
+<?php
+	
+	if ($_GET('data')==='lg') {
+		session_destroy();
+		# code...
+	}
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -42,6 +49,7 @@
 
 <?php
 	$conn = mysqli_connect("btsaydncrw6xehglqk6u-mysql.services.clever-cloud.com", "uqpatj9ytkbkfa7e", "x11j8zt3kiS1UaX70zrS", "btsaydncrw6xehglqk6u","3306") or die("Unable to connect");
+	
 	session_start();
 	
 	if(isset($_POST['username']) && isset($_POST['password'])) 
