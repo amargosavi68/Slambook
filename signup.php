@@ -108,12 +108,12 @@
 		$data = mysqli_fetch_array($result);
 		if(!isset($data))
 		{
-			$enc_pass = AES_ENCRYPT($_POST['password'],'slambookpwd');
+			$enc_pass = $_POST['password'];
 			$query = "INSERT INTO login(first_name,last_name,email,password)VALUES('".$_POST['first_name']."','".$_POST['last_name']."','".$_POST['email']."','$enc_pass')";
 			mysqli_query($conn, $query);
 			echo '<script>alert("Registered successfully")</script>';
 			mysqli_close($conn);
-			header("Location:index.html");
+			header("Location:index.php");
 		}
 		else
 		{

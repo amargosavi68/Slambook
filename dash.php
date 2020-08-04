@@ -23,7 +23,7 @@
 					array_push($user_info, $x[1]);
 					array_push($user_info, $x[2]);
 					array_push($user_info, $x[3]);
-					array_push($user_info, AES_DECRYPT(($x[4]),'slambookpwd'));
+					array_push($user_info, $x[4]);
 
 				}
 
@@ -124,7 +124,11 @@
 	<header>
 			<label>Welcome,</label><label id="user"></label>
 		<div class="logout">
+<<<<<<< HEAD
 			<a href="login.php\data='lg'"><img src="Images\lg.png" height="30px" width="30px" alt="Logout Button"></a>
+=======
+			<a href="login.php"><img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.iconscout.com%2Ficon%2Fpremium%2Fpng-256-thumb%2Flogout-1-110657.png&f=1&nofb=1" height="30px" width="30px" alt="Logout Button"></a>
+>>>>>>> 5f141986d0e06a9344ad2c8fe290f9fb8cfcc609
 		</div>
 	</header>
 
@@ -503,7 +507,7 @@
 
 			if (fname!="" && lname!="" && password!="") 
 			{
-				var query = "UPDATE login SET first_name='"+fname+"',last_name='"+lname+"',password=md5('"+password+"') WHERE user_id= '"+userid+"'";
+				var query = "UPDATE login SET first_name='"+fname+"',last_name='"+lname+"',password='"+password+"' WHERE user_id= '"+userid+"'";
 				//alert(query);
 
 				window.location.href = "connection.php?query="+query+"&userid="+userid+"&name="+new_name;
