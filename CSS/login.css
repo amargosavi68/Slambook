@@ -96,7 +96,7 @@ section .container form #msg
 
 	section .container .head
 	{
-		font-size: 100%;
+		font-size: 120%;
 	}
 
 	section .container form label,input[type="text"], input[type="password"]
