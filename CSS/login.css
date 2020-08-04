@@ -3,18 +3,16 @@ body
 	width: 90%;
 	margin: 5% auto;
 	font-family: "Belgrano";
-	background-color: #fbf0ff;
-
+	background-color: #0bf0ff;
 }
 
 section
 {
 	width: 29%;
-	margin-left: 35%; 
+	margin-left: 35%;
 	background-color: rgba(0,0,0,0.8);
 	box-shadow: 8px 8px 5px 10px gray;
 	color: white;
-
 }
 
 section .container
@@ -23,7 +21,7 @@ section .container
 	padding: 10%;
 	display: inline-block;
 	text-align: -webkit-center;
-	
+
 }
 
 
@@ -85,7 +83,7 @@ section .container form #msg
 		margin:10% 1%;
 	}
 
-	section 
+	section
 	{
 		width: 80%;
 		margin: 15%;
@@ -94,5 +92,15 @@ section .container form #msg
 	section .container
 	{
 		padding: 0% 15%;
+	}
+
+	section .container .head
+	{
+		font-size: 100%;
+	}
+
+	section .container form label,input[type="text"], input[type="password"]
+	{
+		font-size: 60%;
 	}
 }
