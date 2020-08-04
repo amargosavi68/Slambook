@@ -175,6 +175,9 @@ header .logout:hover
 	{
 		width: 100%;
 		margin: 2%;
+		display: flex;
+		justify-content: center;
+		text-align: center;
 	}
 
 	#container h2
